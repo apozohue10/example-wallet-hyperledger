@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+    <%- include('../partials/header'); %>
+</header>
+
+<main>
+    <div class="jumbotron">
+        <h1>Input invitation</h1>
+        <form action="/input-invitation" method="POST">
+			<div class="form-group">
+				<label for="comment">Invitation body:</label>
+				<textarea class="form-control" rows="5" id="input-invitation" name="input-invitation"></textarea>
+			</div>
+			<input type="submit" class="btn btn-info" value="Submit">
+	  </form>
+    </div>
+</main>
+
+<footer>
+    <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>

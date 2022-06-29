@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+    <%- include('../partials/header'); %>
+</header>
+
+<main>
+	<div class="jumbotron">
+		<h1>List of connections completed</h1>
+		<div class="list-group">
+			<% for (var l of list_connections) { %>
+				<a href="#" class="list-group-item">
+					<h4 class="list-group-item-heading"><%= l.their_label %></h4>
+					<p class="list-group-item-text"><%= l.connection_id %></p>
+				</a>
+			<% } %>
+		</div>
+	</div>
+</main>
+
+<footer>
+    <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
